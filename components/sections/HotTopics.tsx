@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import { ArrowRight, Eye, Heart, MessageCircle } from "lucide-react";
+import { ArrowRight, Eye, Heart, MessageCircle, Share2 } from "lucide-react";
 
 const categories = ["Architecture", "Engineering", "Construction"];
 
@@ -73,40 +73,42 @@ export default function HotTopics() {
 
   return (
     <section className="bg-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        {/* Header */}
-        <div className="text-center mb-12">
+      <div className="w-full">
+        {/* Header - Full Width */}
+        <div className="text-center mb-12 px-4">
           <div className="bg-yellow-500 text-black px-6 py-3 rounded-lg inline-block font-bold text-xl mb-4">
             Hot Topics
           </div>
         </div>
 
-        {/* Category Tabs */}
-        <div className="flex flex-wrap justify-center gap-4 mb-12">
-          {categories.map((category) => (
-            <button
-              key={category}
-              onClick={() => setActiveCategory(category)}
-              className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
-                activeCategory === category
-                  ? "bg-white text-black"
-                  : "bg-gray-800 text-white hover:bg-gray-700"
-              }`}
-            >
-              {category}
-            </button>
-          ))}
-        </div>
+        {/* Content Container - Max Width */}
+        <div className="max-w-7xl mx-auto px-4">
+          {/* Category Tabs */}
+          <div className="flex flex-wrap justify-center gap-4 mb-12">
+            {categories.map((category) => (
+              <button
+                key={category}
+                onClick={() => setActiveCategory(category)}
+                className={`px-6 py-2 rounded-full font-medium transition-all duration-300 ${
+                  activeCategory === category
+                    ? "bg-white text-black"
+                    : "bg-gray-800 text-white hover:bg-gray-700"
+                }`}
+              >
+                {category}
+              </button>
+            ))}
+          </div>
 
-        {/* Articles Grid */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+          {/* Articles Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {articles[activeCategory as keyof typeof articles]?.map((article) => (
             <div
               key={article.id}
               className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer"
             >
               {/* Image */}
-              <div className="relative h-48 mb-4">
+              <div className="relative h-64 mb-4">
                 <div 
                   className="w-full h-full rounded-2xl bg-gradient-to-br from-gray-600 to-gray-800"
                   style={{
@@ -144,6 +146,11 @@ export default function HotTopics() {
                       <MessageCircle className="w-4 h-4" />
                       <span className="text-sm">{article.comments}</span>
                     </button>
+                    
+                    {/* Share */}
+                    <button className="flex items-center space-x-1 text-yellow-500 hover:text-yellow-400 transition-colors">
+                      <Share2 className="w-4 h-4" />
+                    </button>
                   </div>
                   
                   <div className="flex items-center space-x-2 bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-medium hover:bg-yellow-400 transition-colors">
@@ -162,6 +169,7 @@ export default function HotTopics() {
             <span className="font-medium">See all articles</span>
             <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
           </button>
+        </div>
         </div>
       </div>
     </section>
