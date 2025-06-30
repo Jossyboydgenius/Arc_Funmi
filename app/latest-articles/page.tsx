@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { Eye, Heart, MessageCircle, Share2, SlidersHorizontal } from "lucide-react";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
@@ -187,9 +188,10 @@ export default function LatestArticlesPage() {
         <div className="max-w-7xl mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredArticles.map((article) => (
-              <div
+              <Link
                 key={article.id}
-                className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer"
+                href={`/article/${article.id}`}
+                className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer block"
               >
                 {/* Image */}
                 <div className="relative h-48 mb-4">
@@ -235,7 +237,7 @@ export default function LatestArticlesPage() {
                     </div>
                   </div>
                 </div>
-              </div>
+              </Link>
             ))}
           </div>
 
