@@ -27,7 +27,7 @@ export default function HeroSection() {
                 </span>
               </h1>
               
-              <p className="text-xl text-gray-300 mb-8 leading-relaxed">
+              <p className="text-xl text-white mb-8 leading-relaxed">
                 A knowledge hub for architects, engineers and construction pros to 
                 read, write and share insights.
               </p>
