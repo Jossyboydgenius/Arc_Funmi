@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import { ArrowRight, Eye, Heart, MessageCircle, Share2 } from "lucide-react";
 
 const featuredArticles = [
@@ -39,9 +40,10 @@ export default function Featured() {
           {/* Articles Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
           {featuredArticles.map((article) => (
-            <div
+            <Link
               key={article.id}
-              className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer"
+              href={`/article/${article.id}`}
+              className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer block"
             >
               {/* Image */}
               <div className="relative h-64 mb-4">
@@ -94,7 +96,7 @@ export default function Featured() {
                   </div>
                 </div>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
 
