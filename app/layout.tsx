@@ -8,7 +8,7 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Arc Funmi - Where Built World Shares Ideas",
+  title: "Arcfunmi - Where Built World Shares Ideas",
   description: "A knowledge hub for architects, engineers and construction pros to read, write and share insights.",
 };
 
