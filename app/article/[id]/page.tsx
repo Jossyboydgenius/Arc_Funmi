@@ -68,35 +68,7 @@ const mockArticles = {
     id: "2",
     title: "Structural Engineering Innovations in High-Rise Construction",
     description: "Examining the latest advances in structural engineering that are enabling taller, safer, and more efficient skyscrapers",
-    content: `
-      <p>The world of high-rise construction is experiencing a renaissance driven by groundbreaking innovations in structural engineering. As cities grow denser and land becomes more precious, engineers are pushing the boundaries of what's possible in vertical construction.</p>
-      
-      <h2>Advanced Materials Revolution</h2>
-      <p>Modern high-rise construction benefits from revolutionary materials that offer superior strength-to-weight ratios. Ultra-high-performance concrete (UHPC) provides exceptional durability and allows for thinner structural elements. Carbon fiber reinforced polymers (CFRP) offer lightweight alternatives to traditional steel reinforcement, while advanced steel alloys provide greater tensile strength and corrosion resistance.</p>
-      
-      <h2>Innovative Structural Systems</h2>
-      <p>Contemporary structural engineering employs sophisticated systems to maximize efficiency and safety:</p>
-      <ul>
-        <li><strong>Outrigger Systems:</strong> These connect the building's core to perimeter columns, effectively distributing lateral loads and reducing sway.</li>
-        <li><strong>Mega-Frame Structures:</strong> Large-scale structural frameworks that span multiple floors, creating open, flexible interior spaces.</li>
-        <li><strong>Damping Systems:</strong> Tuned mass dampers and viscous dampers that reduce building movement during wind and seismic events.</li>
-        <li><strong>Diagrid Systems:</strong> Diagonal grid structures that provide both structural support and architectural expression.</li>
-      </ul>
-      
-      <h2>Seismic and Wind Engineering</h2>
-      <p>Modern high-rises must withstand extreme environmental forces. Advanced computational fluid dynamics (CFD) modeling helps engineers understand wind loads and optimize building shapes to reduce wind resistance. Seismic isolation systems and energy dissipation devices protect structures in earthquake-prone regions.</p>
-      
-      <h2>Digital Design and Analysis</h2>
-      <p>Building Information Modeling (BIM) and advanced structural analysis software enable engineers to optimize designs with unprecedented precision. Finite element analysis (FEA) allows for detailed stress analysis, while parametric design tools facilitate the exploration of multiple design alternatives.</p>
-      
-      <h2>Sustainable Structural Design</h2>
-      <p>Sustainability considerations are increasingly important in structural engineering. Engineers are developing strategies to minimize material usage while maintaining structural integrity. Prefabricated and modular construction techniques reduce waste and construction time, while the use of recycled materials supports circular economy principles.</p>
-      
-      <h2>Future Trends</h2>
-      <p>The future of high-rise structural engineering promises even more exciting developments. Self-healing concrete that can repair minor cracks automatically, shape-memory alloys that can change properties in response to environmental conditions, and AI-assisted design optimization are just a few of the innovations on the horizon.</p>
-      
-      <p>As we continue to reach higher into the sky, structural engineers play a crucial role in ensuring that our buildings are not only tall and impressive but also safe, sustainable, and responsive to human needs.</p>
-    `,
+    content: `<p>High-rise construction content...</p>`,
     author: {
       name: "Sarah Chen",
       avatar: "/assets/images/article-2.jpg",
@@ -117,85 +89,49 @@ const mockArticles = {
     id: "3",
     title: "Smart Construction Technologies: The Digital Transformation of Building",
     description: "How IoT, AI, and robotics are revolutionizing construction processes and project management",
-    content: `
-      <p>The construction industry is undergoing a digital transformation that promises to revolutionize how we build. From artificial intelligence and robotics to the Internet of Things (IoT) and advanced analytics, smart technologies are making construction more efficient, safer, and more sustainable.</p>
-      
-      <h2>The Internet of Things in Construction</h2>
-      <p>IoT sensors and connected devices are providing real-time insights into construction processes. These technologies enable:</p>
-      <ul>
-        <li><strong>Equipment Monitoring:</strong> Sensors track equipment performance, predict maintenance needs, and prevent costly breakdowns.</li>
-        <li><strong>Environmental Monitoring:</strong> Continuous monitoring of air quality, noise levels, and weather conditions helps ensure worker safety and optimal working conditions.</li>
-        <li><strong>Material Tracking:</strong> RFID tags and GPS sensors provide real-time visibility into material locations and usage.</li>
-        <li><strong>Safety Monitoring:</strong> Wearable devices track worker vitals and detect potential safety hazards.</li>
-      </ul>
-      
-      <h2>Artificial Intelligence and Machine Learning</h2>
-      <p>AI is transforming construction project management and decision-making. Machine learning algorithms analyze vast amounts of project data to identify patterns, predict risks, and optimize schedules. AI-powered tools can:</p>
-      <ul>
-        <li>Automatically generate project schedules and resource allocations</li>
-        <li>Predict project delays and cost overruns</li>
-        <li>Optimize material ordering and logistics</li>
-        <li>Enhance quality control through automated defect detection</li>
-      </ul>
-      
-      <h2>Robotics and Automation</h2>
-      <p>Robotic systems are increasingly being deployed on construction sites to perform repetitive, dangerous, or precision tasks. Examples include:</p>
-      <ul>
-        <li><strong>Bricklaying Robots:</strong> Automated systems that can lay bricks faster and more precisely than human workers.</li>
-        <li><strong>3D Printing:</strong> Large-scale 3D printers that can construct entire building components or even complete structures.</li>
-        <li><strong>Demolition Robots:</strong> Remote-controlled machines that safely demolish structures in hazardous environments.</li>
-        <li><strong>Inspection Drones:</strong> UAVs equipped with cameras and sensors for site surveys and progress monitoring.</li>
-      </ul>
-      
-      <h2>Digital Twins and Virtual Construction</h2>
-      <p>Digital twin technology creates virtual replicas of physical construction projects, enabling real-time monitoring and simulation. These digital models help teams:</p>
-      <ul>
-        <li>Visualize construction progress and identify potential issues</li>
-        <li>Test different scenarios and optimize construction sequences</li>
-        <li>Coordinate between different trades and stakeholders</li>
-        <li>Maintain accurate as-built documentation</li>
-      </ul>
-      
-      <h2>Augmented and Virtual Reality</h2>
-      <p>AR and VR technologies are enhancing construction planning and execution. These tools enable:</p>
-      <ul>
-        <li>Immersive design reviews and client presentations</li>
-        <li>On-site visualization of completed designs</li>
-        <li>Remote collaboration and expert assistance</li>
-        <li>Enhanced worker training and safety education</li>
-      </ul>
-      
-      <h2>Challenges and Opportunities</h2>
-      <p>While smart construction technologies offer tremendous benefits, their adoption faces several challenges:</p>
-      <ul>
-        <li>High initial investment costs</li>
-        <li>Need for worker training and skill development</li>
-        <li>Integration with existing workflows and systems</li>
-        <li>Cybersecurity and data privacy concerns</li>
-      </ul>
-      
-      <h2>The Future of Smart Construction</h2>
-      <p>As technology continues to evolve, we can expect even more innovative applications in construction. Autonomous construction equipment, AI-powered project management, and fully integrated digital ecosystems will further transform the industry.</p>
-      
-      <p>The key to successful digital transformation lies in taking a holistic approach that considers not just the technology itself, but also the people, processes, and culture that must evolve alongside it. Companies that embrace this comprehensive view of digitalization will be best positioned to thrive in the construction industry of the future.</p>
-    `,
+    content: `<p>Smart construction content...</p>`,
     author: {
-      name: "Michael Rodriguez",
+      name: "Michael Johnson",
       avatar: "/assets/images/article-3.jpg",
-      bio: "Construction Technology Consultant and Digital Transformation Expert"
+      bio: "Construction Technology Consultant and Digital Innovation Expert"
     },
-    category: "Construction",
-    tags: ["smart construction", "IoT", "AI", "robotics", "digital transformation"],
+    category: "Technology",
+    tags: ["IoT", "AI", "robotics", "construction tech"],
     publishedAt: "2024-01-10",
-    readTime: "12 min read",
-    views: "3,267",
-    likes: "124",
-    comments: "31",
+    readTime: "7 min read",
+    views: "3,123",
+    likes: "145",
+    comments: "34",
     image: "/assets/images/article-3.jpg",
     isLiked: false,
     isBookmarked: false
   }
 };
+
+interface Comment {
+  id: number;
+  author: {
+    name: string;
+    avatar: string;
+  };
+  content: string;
+  publishedAt: string;
+  likes: number;
+  isLiked: boolean;
+  replies: Reply[];
+}
+
+interface Reply {
+  id: number;
+  author: {
+    name: string;
+    avatar: string;
+  };
+  content: string;
+  publishedAt: string;
+  likes: number;
+  isLiked: boolean;
+}
 
 export default function ArticlePage() {
   const params = useParams();
@@ -204,22 +140,151 @@ export default function ArticlePage() {
   const [isLiked, setIsLiked] = useState(false);
   const [isBookmarked, setIsBookmarked] = useState(false);
   const [likes, setLikes] = useState(0);
+  const [comments, setComments] = useState<Comment[]>([
+    {
+      id: 1,
+      author: {
+        name: "Sarah Johnson",
+        avatar: "/assets/images/article-2.jpg"
+      },
+      content: "Great article! I particularly found the section on sustainable materials very insightful. Have you considered discussing biophilic design in future articles?",
+      publishedAt: "2024-01-16T10:30:00Z",
+      likes: 5,
+      isLiked: false,
+      replies: [
+        {
+          id: 101,
+          author: {
+            name: "Olajide Funminiyi",
+            avatar: "/assets/images/article-1.jpg"
+          },
+          content: "Thank you for your feedback! Biophilic design is definitely on my list for upcoming articles. It's such an important aspect of creating healthy built environments.",
+          publishedAt: "2024-01-16T14:20:00Z",
+          likes: 2,
+          isLiked: false
+        }
+      ]
+    },
+    {
+      id: 2,
+      author: {
+        name: "Michael Rodriguez",
+        avatar: "/assets/images/article-3.jpg"
+      },
+      content: "The case studies you mentioned are excellent examples. I've been working on a similar project and this gives me some great ideas for implementation.",
+      publishedAt: "2024-01-16T08:15:00Z",
+      likes: 3,
+      isLiked: false,
+      replies: []
+    },
+    {
+      id: 3,
+      author: {
+        name: "Emily Chen",
+        avatar: "/assets/images/article-4.jpg"
+      },
+      content: "Could you elaborate more on the cost implications of implementing these sustainable technologies? That would be very helpful for project planning.",
+      publishedAt: "2024-01-15T16:45:00Z",
+      likes: 8,
+      isLiked: false,
+      replies: []
+    }
+  ]);
+  const [newComment, setNewComment] = useState("");
+  const [replyingTo, setReplyingTo] = useState<number | null>(null);
+  const [replyContent, setReplyContent] = useState("");
 
   useEffect(() => {
     if (article) {
+      setLikes(parseInt(article.likes));
       setIsLiked(article.isLiked);
       setIsBookmarked(article.isBookmarked);
-      setLikes(parseInt(article.likes));
     }
   }, [article]);
 
   const handleLike = () => {
     setIsLiked(!isLiked);
-    setLikes(prev => isLiked ? prev - 1 : prev + 1);
+    setLikes(isLiked ? likes - 1 : likes + 1);
   };
 
   const handleBookmark = () => {
     setIsBookmarked(!isBookmarked);
+  };
+
+  const handleAddComment = () => {
+    if (!newComment.trim()) return;
+    
+    const comment: Comment = {
+      id: Date.now(),
+      author: {
+        name: "User",
+        avatar: "/assets/images/article-1.jpg"
+      },
+      content: newComment,
+      publishedAt: new Date().toISOString(),
+      likes: 0,
+      isLiked: false,
+      replies: []
+    };
+    
+    setComments([comment, ...comments]);
+    setNewComment("");
+  };
+
+  const handleCommentLike = (commentId: number) => {
+    setComments(comments.map(comment => 
+      comment.id === commentId 
+        ? { 
+            ...comment, 
+            isLiked: !comment.isLiked,
+            likes: comment.isLiked ? comment.likes - 1 : comment.likes + 1
+          }
+        : comment
+    ));
+  };
+
+  const handleAddReply = (commentId: number) => {
+    if (!replyContent.trim()) return;
+    
+    const reply: Reply = {
+      id: Date.now(),
+      author: {
+        name: "User",
+        avatar: "/assets/images/article-1.jpg"
+      },
+      content: replyContent,
+      publishedAt: new Date().toISOString(),
+      likes: 0,
+      isLiked: false
+    };
+    
+    setComments(comments.map(comment => 
+      comment.id === commentId 
+        ? { ...comment, replies: [...comment.replies, reply] }
+        : comment
+    ));
+    
+    setReplyContent("");
+    setReplyingTo(null);
+  };
+
+  const handleReplyLike = (commentId: number, replyId: number) => {
+    setComments(comments.map(comment => 
+      comment.id === commentId 
+        ? {
+            ...comment,
+            replies: comment.replies.map(reply =>
+              reply.id === replyId
+                ? {
+                    ...reply,
+                    isLiked: !reply.isLiked,
+                    likes: reply.isLiked ? reply.likes - 1 : reply.likes + 1
+                  }
+                : reply
+            )
+          }
+        : comment
+    ));
   };
 
   const handleShare = () => {
@@ -230,8 +295,9 @@ export default function ArticlePage() {
         url: window.location.href,
       });
     } else {
+      // Fallback for browsers that don't support Web Share API
       navigator.clipboard.writeText(window.location.href);
-      alert('Article link copied to clipboard!');
+      alert("Link copied to clipboard!");
     }
   };
 
@@ -402,6 +468,169 @@ export default function ArticlePage() {
                 View Profile →
               </Link>
             </div>
+          </div>
+        </div>
+
+        {/* Comments Section */}
+        <div className="border-t border-gray-800 pt-12 mb-12">
+          <h3 className="text-2xl font-bold text-white mb-6">
+            Comments ({comments.length})
+          </h3>
+
+          {/* Add Comment Form */}
+          <div className="mb-8">
+            <div className="flex space-x-4">
+              <div className="w-10 h-10 rounded-full bg-gray-700 flex items-center justify-center text-white font-semibold">
+                U
+              </div>
+              <div className="flex-1">
+                <textarea
+                  value={newComment}
+                  onChange={(e) => setNewComment(e.target.value)}
+                  placeholder="Share your thoughts..."
+                  className="w-full bg-gray-900 border border-gray-700 rounded-lg px-4 py-3 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-500 resize-none h-24"
+                />
+                <div className="flex justify-end mt-3">
+                  <button
+                    onClick={handleAddComment}
+                    disabled={!newComment.trim()}
+                    className="bg-yellow-500 text-black px-6 py-2 rounded-lg font-medium hover:bg-yellow-600 transition-colors disabled:bg-gray-600 disabled:text-gray-400 disabled:cursor-not-allowed"
+                  >
+                    Post Comment
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Comments List */}
+          <div className="space-y-6">
+            {comments.map((comment) => (
+              <div key={comment.id} className="bg-gray-900 rounded-lg p-6">
+                {/* Comment Header */}
+                <div className="flex items-center justify-between mb-4">
+                  <div className="flex items-center space-x-3">
+                    <div className="w-10 h-10 rounded-full overflow-hidden">
+                      <Image
+                        src={comment.author.avatar}
+                        alt={comment.author.name}
+                        width={40}
+                        height={40}
+                        className="w-full h-full object-cover"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-white">{comment.author.name}</h4>
+                      <p className="text-sm text-gray-400">
+                        {new Date(comment.publishedAt).toLocaleDateString()}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Comment Content */}
+                <p className="text-gray-300 mb-4">{comment.content}</p>
+
+                {/* Comment Actions */}
+                <div className="flex items-center space-x-6">
+                  <button
+                    onClick={() => handleCommentLike(comment.id)}
+                    className={`flex items-center space-x-2 text-sm ${
+                      comment.isLiked ? 'text-red-500' : 'text-gray-400 hover:text-red-500'
+                    } transition-colors`}
+                  >
+                    <Heart className={`w-4 h-4 ${comment.isLiked ? 'fill-current' : ''}`} />
+                    <span>{comment.likes}</span>
+                  </button>
+                  
+                  <button
+                    onClick={() => setReplyingTo(replyingTo === comment.id ? null : comment.id)}
+                    className="flex items-center space-x-2 text-sm text-gray-400 hover:text-yellow-500 transition-colors"
+                  >
+                    <MessageCircle className="w-4 h-4" />
+                    <span>Reply</span>
+                  </button>
+                </div>
+
+                {/* Reply Form */}
+                {replyingTo === comment.id && (
+                  <div className="mt-4 ml-4 pl-4 border-l-2 border-gray-700">
+                    <div className="flex space-x-3">
+                      <div className="w-8 h-8 rounded-full bg-gray-700 flex items-center justify-center text-white text-sm font-semibold">
+                        U
+                      </div>
+                      <div className="flex-1">
+                        <textarea
+                          value={replyContent}
+                          onChange={(e) => setReplyContent(e.target.value)}
+                          placeholder={`Reply to ${comment.author.name}...`}
+                          className="w-full bg-gray-800 border border-gray-600 rounded-lg px-3 py-2 text-white placeholder-gray-400 focus:outline-none focus:border-yellow-500 resize-none h-20 text-sm"
+                        />
+                        <div className="flex justify-end space-x-2 mt-2">
+                          <button
+                            onClick={() => {
+                              setReplyingTo(null);
+                              setReplyContent("");
+                            }}
+                            className="text-sm text-gray-400 hover:text-white transition-colors"
+                          >
+                            Cancel
+                          </button>
+                          <button
+                            onClick={() => handleAddReply(comment.id)}
+                            disabled={!replyContent.trim()}
+                            className="bg-yellow-500 text-black px-4 py-1 rounded text-sm font-medium hover:bg-yellow-600 transition-colors disabled:bg-gray-600 disabled:text-gray-400 disabled:cursor-not-allowed"
+                          >
+                            Reply
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                )}
+
+                {/* Replies */}
+                {comment.replies && comment.replies.length > 0 && (
+                  <div className="mt-4 ml-4 pl-4 border-l-2 border-gray-700 space-y-4">
+                    {comment.replies.map((reply) => (
+                      <div key={reply.id} className="bg-gray-800 rounded-lg p-4">
+                        <div className="flex items-center justify-between mb-3">
+                          <div className="flex items-center space-x-3">
+                            <div className="w-8 h-8 rounded-full overflow-hidden">
+                              <Image
+                                src={reply.author.avatar}
+                                alt={reply.author.name}
+                                width={32}
+                                height={32}
+                                className="w-full h-full object-cover"
+                              />
+                            </div>
+                            <div>
+                              <h5 className="font-medium text-white text-sm">{reply.author.name}</h5>
+                              <p className="text-xs text-gray-400">
+                                {new Date(reply.publishedAt).toLocaleDateString()}
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <p className="text-gray-300 text-sm mb-3">{reply.content}</p>
+                        
+                        <button
+                          onClick={() => handleReplyLike(comment.id, reply.id)}
+                          className={`flex items-center space-x-2 text-xs ${
+                            reply.isLiked ? 'text-red-500' : 'text-gray-400 hover:text-red-500'
+                          } transition-colors`}
+                        >
+                          <Heart className={`w-3 h-3 ${reply.isLiked ? 'fill-current' : ''}`} />
+                          <span>{reply.likes}</span>
+                        </button>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+            ))}
           </div>
         </div>
 
