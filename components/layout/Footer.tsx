@@ -6,9 +6,9 @@ export default function Footer() {
     <footer className="bg-black text-white py-12">
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
-          {/* Arc Funmi */}
+          {/* Arcfunmi */}
           <div>
-            <h3 className="text-xl font-bold mb-4">Arc Funmi</h3>
+            <h3 className="text-xl font-bold mb-4">Arcfunmi</h3>
             <p className="text-gray-400 text-sm">
               Where Built World Shares Ideas. A knowledge hub for architects, engineers and construction professionals.
             </p>
@@ -39,8 +39,9 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-gray-300">Company</h4>
             <ul className="space-y-2">
               <li><Link href="/about" className="text-gray-400 hover:text-white transition-colors">About Us</Link></li>
-              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact</Link></li>
+              <li><Link href="/contact" className="text-gray-400 hover:text-white transition-colors">Contact Us</Link></li>
               <li><Link href="/privacy" className="text-gray-400 hover:text-white transition-colors">Privacy Policy</Link></li>
+              <li><Link href="/terms" className="text-gray-400 hover:text-white transition-colors">Terms of Service</Link></li>
             </ul>
           </div>
         </div>
@@ -62,7 +63,7 @@ export default function Footer() {
             </Link>
           </div>
           <div className="text-gray-400 text-sm">
-            © 2024 Arc Funmi. All rights reserved.
+            © 2025 Arcfunmi. All rights reserved.
           </div>
         </div>
       </div>
