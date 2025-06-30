@@ -214,7 +214,7 @@ export default function ForYouPage() {
               >
                 {topArticles.map((article) => (
                   <div key={article.id} className="flex-none w-80">
-                    <div className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                    <Link href={`/article/${article.id}`} className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer block">
                       {/* Image */}
                       <div className="relative h-48 mb-4">
                         <div 
@@ -255,7 +255,7 @@ export default function ForYouPage() {
                           </div>
                         </div>
                       </div>
-                    </div>
+                    </Link>
                   </div>
                 ))}
               </div>
@@ -288,7 +288,7 @@ export default function ForYouPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="space-y-6 mb-12">
               {featuredArticles.map((article) => (
-                <div key={article.id} className="flex bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-[1.02] transition-all duration-300 cursor-pointer">
+                <Link key={article.id} href={`/article/${article.id}`} className="flex bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-[1.02] transition-all duration-300 cursor-pointer">
                   {/* Image */}
                   <div className="relative w-32 h-24 mr-6 flex-shrink-0">
                     <div 
@@ -333,7 +333,7 @@ export default function ForYouPage() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
@@ -364,7 +364,7 @@ export default function ForYouPage() {
           <div className="max-w-7xl mx-auto px-4">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-12">
               {lastReadArticles.map((article) => (
-                <div key={article.id} className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer">
+                <Link key={article.id} href={`/article/${article.id}`} className="bg-black border border-gray-800 rounded-2xl p-6 hover:transform hover:scale-105 transition-all duration-300 cursor-pointer block">
                   {/* Image */}
                   <div className="relative h-48 mb-4">
                     <div 
@@ -402,7 +402,7 @@ export default function ForYouPage() {
                       </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
