@@ -20,7 +20,7 @@ const features = [
   },
   {
     icon: Coffee,
-    title: "Write and Publish Your Expertise",
+    title: "Grow Your Professional Voice",
     description: "Build your professional reputation by sharing valuable content. Establish yourself as a thought leader in your field.",
   },
 ];
@@ -28,86 +28,38 @@ const features = [
 export default function WhyArcFunmi() {
   return (
     <section className="bg-black text-white py-16">
-      <div className="max-w-7xl mx-auto px-4">
-        <div className="text-center mb-12">
+      <div className="w-full">
+        {/* Header - Full Width */}
+        <div className="text-center mb-12 px-4">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">
-            Why Arc Funmi?
+            Why Arcfunmi?
           </h2>
         </div>
         
-        <div className="relative">
-          {/* Yellow glow effect */}
-          <div className="absolute inset-0 bg-yellow-500/20 rounded-3xl blur-3xl" />
-          
-          {/* Container with particle border effect */}
-          <div 
-            className="relative bg-yellow-500 rounded-3xl p-8 md:p-12 overflow-hidden"
-            style={{
-              background: `
-                linear-gradient(45deg, #FFB000 0%, #FFB000 25%, transparent 25%, transparent 75%, #FFB000 75%, #FFB000),
-                linear-gradient(45deg, #FFB000 0%, #FFB000 25%, transparent 25%, transparent 75%, #FFB000 75%, #FFB000),
-                #FFB000
-              `,
-              backgroundSize: '20px 20px, 20px 20px, 100%',
-              backgroundPosition: '0 0, 10px 10px, 0 0',
-              animation: 'particleBorder 4s linear infinite'
-            }}
-          >
-            {/* Inner content container */}
-            <div className="relative bg-yellow-500 rounded-2xl p-8 md:p-12 -m-2">
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                {features.map((feature, index) => (
-                  <div key={index} className="text-center text-black">
-                    <div className="flex justify-center mb-4">
-                      <div className="w-16 h-16 bg-black rounded-lg flex items-center justify-center">
-                        <feature.icon className="w-8 h-8 text-yellow-500" />
-                      </div>
+        {/* Content Container - Max Width */}
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {features.map((feature, index) => (
+              <div key={index} className="relative">
+                {/* Individual card with yellow background */}
+                <div className="bg-yellow-500 rounded-2xl p-10 text-center text-black h-full min-h-[300px] flex flex-col justify-center">
+                  <div className="flex justify-center mb-8">
+                    <div className="w-20 h-20 bg-black rounded-xl flex items-center justify-center">
+                      <feature.icon className="w-10 h-10 text-yellow-500" />
                     </div>
-                    <h3 className="text-xl font-bold mb-3">
-                      {feature.title}
-                    </h3>
-                    <p className="text-gray-800 leading-relaxed">
-                      {feature.description}
-                    </p>
                   </div>
-                ))}
+                  <h3 className="text-2xl font-bold mb-6 leading-tight">
+                    {feature.title}
+                  </h3>
+                  <p className="text-gray-800 leading-relaxed text-base">
+                    {feature.description}
+                  </p>
+                </div>
               </div>
-            </div>
-            
-            {/* Floating particles */}
-            {[...Array(8)].map((_, i) => (
-              <div
-                key={i}
-                className="absolute w-1 h-1 bg-yellow-300 rounded-full opacity-80"
-                style={{
-                  top: `${10 + (i * 12)}%`,
-                  left: `${5 + (i % 2) * 90}%`,
-                  animation: `floatParticle ${3 + (i * 0.5)}s ease-in-out infinite`,
-                  animationDelay: `${i * 0.5}s`
-                }}
-              />
             ))}
           </div>
         </div>
       </div>
-      
-      <style jsx>{`
-        @keyframes particleBorder {
-          0% { background-position: 0 0, 10px 10px, 0 0; }
-          100% { background-position: 20px 20px, 30px 30px, 0 0; }
-        }
-        
-        @keyframes floatParticle {
-          0%, 100% {
-            transform: translateY(0px) scale(1);
-            opacity: 0.8;
-          }
-          50% {
-            transform: translateY(-10px) scale(1.2);
-            opacity: 1;
-          }
-        }
-      `}</style>
     </section>
   );
 } 
