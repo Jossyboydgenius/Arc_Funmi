@@ -28,7 +28,7 @@ export default function LoginPage() {
             <div className="inline-flex items-center justify-center mb-8">
               <Image
                 src="/assets/svgs/logo.svg"
-                alt="Arc Funmi Logo"
+                alt="Arcfunmi Logo"
                 width={150}
                 height={50}
                 priority
@@ -63,6 +63,13 @@ export default function LoginPage() {
                 className="w-full px-6 py-4 bg-white border-2 border-black rounded-full text-gray-700 placeholder-gray-400 focus:outline-none focus:ring-2 focus:ring-black transition-all"
                 required
               />
+            </div>
+
+            {/* Forgot Password Link */}
+            <div className="text-right">
+              <Link href="/forgot-password" className="text-black hover:underline font-medium">
+                Forgot Password?
+              </Link>
             </div>
 
             {/* Login Button */}
