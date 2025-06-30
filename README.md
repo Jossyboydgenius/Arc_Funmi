@@ -1,6 +1,6 @@
-# Arc Funmi - Where Built World Shares Ideas
+# Arcfunmi - Where Built World Shares Ideas
 
-Arc Funmi is a modern social website built for architects, engineers, and construction professionals to share knowledge, read blogs, and engage with the built world community.
+Arcfunmi is a modern social website built for architects, engineers, and construction professionals to share knowledge, read blogs, and engage with the built world community.
 
 ## 🌟 Features
 
@@ -71,7 +71,7 @@ Arc_Funmi/
 │       │   ├── hero-bg.jpg
 │       │   └── article-*.jpg
 │       └── svgs/        # SVG files
-│           └── logo.svg # Arc Funmi logo
+│           └── logo.svg # Arcfunmi logo
 └── tailwind.config.ts   # Tailwind configuration
 ```
 
